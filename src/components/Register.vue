@@ -33,6 +33,9 @@ export default {
          if(this.user.name===''||this.user.name===''||this.user.email===''||this.user.password===''){
              return alert('All fields should be filled ')
          }
+         if(!parseInt(this.user.idNumber)){
+           return alert('Id number should be a number')
+         }
          console.log(this.user)
          try{
              await firebase.firebase.auth().createUserWithEmailAndPassword(this.user.email, this.user.password)

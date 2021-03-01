@@ -31,7 +31,7 @@ export default {
  methods:{
      ...mapActions(['getUser','getDataUser']),
      sendTo(){
-       router.push('/send')
+       router.push('/piggybank/send')
      },
      typing(e){
          this.name= e.target.value
@@ -44,7 +44,7 @@ export default {
              .then((res) => {
                  const find=this.dataUser.find(user =>user.email === res.user.email)
                  this.getUser(find)
-                 router.push('/home') 
+                 router.push('/piggybank/home') 
              })
          }
          catch(err){
