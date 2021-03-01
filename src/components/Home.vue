@@ -39,7 +39,7 @@ import router from '../router/index'
   },
   created(){
     if(!this.user) {
-      router.push('/login')
+      router.push('/piggybank')
     }
     this.setBalance()
  },
