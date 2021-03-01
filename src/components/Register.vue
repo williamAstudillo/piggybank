@@ -43,6 +43,7 @@ export default {
                   email:this.user.email,
                   balance:100,
                 });
+                alert('Your register is done')
                 router.push('/piggybank')
          }
          catch(err){

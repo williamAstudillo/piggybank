@@ -46,3 +46,14 @@
     width: 50px;
     font-size:15px;
 }
+#form_p2{
+    display:none;
+}
+@media (max-width:656px){
+    #form_p1{
+     display:none;
+    }
+    #form_p2{
+     display:block;
+    }
+}
