@@ -9,14 +9,14 @@
       </router-link> 
     <container class="nav_buttoms">
       <router-link 
-       to="/piggybank/contact"
+       to="/contact"
        class="button_nav"
       >
       <button >Contact us </button>
       </router-link>
 
       <router-link
-        to="/piggybank/register"
+        to="/register"
         v-if="!$store.state.user"
         class="button_nav"
       >

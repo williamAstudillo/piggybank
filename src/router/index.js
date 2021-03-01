@@ -15,22 +15,22 @@ const routes = [
         component: Login
     },
     {
-        path: '/piggybank/register',
+        path: '/register',
         name: 'register',
         component: Register
     },
     {
-        path: '/piggybank/home',
+        path: '/home',
         name: 'home',
         component: Home
     },
     {
-        path: '/piggybank/contact',
+        path: '/contact',
         name: 'contact',
         component: Contact
     },
     {
-        path: '/piggybank/send',
+        path: '/send',
         name: 'send',
         component: Send
     }
