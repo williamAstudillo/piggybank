@@ -31,7 +31,7 @@ export default {
  methods:{
      async register(){
          if(this.user.name===''||this.user.name===''||this.user.email===''||this.user.password===''){
-             return alert('Todos los campos deben estar completos')
+             return alert('All fields should be filled ')
          }
          console.log(this.user)
          try{
