@@ -24,7 +24,7 @@
       </router-link>
 
       <router-link 
-       to="/" 
+       to="/login" 
        v-if="!$store.state.user"
         class="button_nav"
       >
@@ -63,7 +63,7 @@ import firebase from '../main'
     logout(){
       firebase.firebase.auth().signOut().then(()=>console.log('sign out'))
       this.getUser('')
-      router.push('/')
+      router.push('/login')
       localStorage.setItem('user', null)
     }
   }
