@@ -2,6 +2,7 @@
   "name": "project",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://williamAstudillo.github.io/app_weather",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",

@@ -2,7 +2,7 @@
   <div >
     <container class="container_navbar">
       <router-link 
-       to="/piggybank" 
+       to="/" 
        class="navbar_link"
       >
       <h1 class="title">Piggy bank </h1>
@@ -24,7 +24,7 @@
       </router-link>
 
       <router-link 
-       to="/piggybank" 
+       to="/" 
        v-if="!$store.state.user"
         class="button_nav"
       >
@@ -33,7 +33,7 @@
 
 
       <router-link 
-       to="/piggybank"
+       to="/"
        v-if="$store.state.user"
        class="button_nav"
       >
@@ -63,7 +63,7 @@ import firebase from '../main'
     logout(){
       firebase.firebase.auth().signOut().then(()=>console.log('sign out'))
       this.getUser('')
-      router.push('/piggybank')
+      router.push('/')
       localStorage.setItem('user', null)
     }
   }
